@@ -1,0 +1,76 @@
+.menu-list {
+    min-width: 223px;
+}
+
+.menu-popper {
+    padding-bottom: 8px;
+}
+
+.menu-body {
+    overflow-y: auto;
+}
+
+.menu-item {
+    width: 100%;
+    border-radius: 0;
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px 8px 10px 16px;
+    line-height: 1.8rem;
+
+    &.separate {
+        border-top: 1px solid rgba(22, 24, 35, 0.12);
+    }
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.menu-icon,
+.menu-icon img {
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    height: 50px;
+    // margin-top: -8px;
+    font-size: 1.6rem;
+
+    .back-btn {
+        width: 50px;
+        height: 100%;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .header-title {
+        position: absolute;
+        top: 50%;
+        left: 42%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Kiểm soát vị trí và loại bỏ hover cho `header-title--language` */
+    .header-title--language {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none; // Vô hiệu hóa hover cho tiêu đề khi có class này
+    }
+
+    &:hover:not(:has(.header-title--language)) {
+        background-color: rgba(22, 24, 35, 0.03); // Hover chỉ khi không có `header-title--language`
+    }
+}
+
+.header:has(.header-title--language) + .menu-body .menu-item--title {
+    font-size: 1.4rem;
+    font-family: 'TikTokDisplayFont';
+    font-weight: 400;
+}
