@@ -12,5 +12,6 @@
 
 .content {
     flex: 1;
-    min-height: 1500px;
+    min-height: 100%;
+    margin-left: var(--default-sidebar-width);
 }

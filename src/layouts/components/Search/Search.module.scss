@@ -31,6 +31,7 @@
         background-color: transparent;
         appearance: textfield;
         caret-color: var(--primary);
+        padding-right: 40px;
     }
 
     input:not(:placeholder-shown) ~ .search-btn {

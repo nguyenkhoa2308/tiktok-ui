@@ -1,4 +1,5 @@
 import classNames from 'classnames/bind';
+import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
@@ -28,5 +29,10 @@ function MenuItem({ data, isSelected, isDarkModeOption, onClick }) {
         </Button>
     );
 }
+
+MenuItem.propTypes = {
+    data: PropTypes.object.isRequired,
+    onClick: PropTypes.func,
+};
 
 export default MenuItem;

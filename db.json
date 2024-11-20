@@ -1,0 +1,136 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "khoanene",
+            "password": "khoa23082003",
+            "avatar": "https://example.com/avatar1.jpg",
+            "followers": 1200,
+            "following": 150,
+            "bio": "This is user1's bio.",
+            "email": "nguyenduckhoa.ndk.2308@gmail.com",
+            "phone": "0964896098",
+            "videos": [1, 2],
+            "followersList": [2, 3],
+            "followingList": [2, 3]
+        },
+        {
+            "id": 2,
+            "username": "user2",
+            "password": "password456",
+            "avatar": "https://example.com/avatar2.jpg",
+            "followers": 890,
+            "following": 300,
+            "bio": "This is user2's bio.",
+            "email": "user2@example.com",
+            "phone": "0964896098",
+            "videos": [3],
+            "followersList": [1],
+            "followingList": [1, 4]
+        },
+        {
+            "id": 3,
+            "username": "user3",
+            "password": "password789",
+            "avatar": "https://example.com/avatar3.jpg",
+            "followers": 500,
+            "following": 180,
+            "bio": "This is user3's bio.",
+            "email": "user3@example.com",
+            "phone": "0964896098",
+            "videos": [4],
+            "followersList": [1],
+            "followingList": [1, 5]
+        },
+        {
+            "id": 4,
+            "username": "user4",
+            "password": "password012",
+            "avatar": "https://example.com/avatar4.jpg",
+            "followers": 400,
+            "following": 250,
+            "bio": "This is user4's bio.",
+            "email": "user4@example.com",
+            "phone": "0964896098",
+            "videos": [5],
+            "followersList": [2],
+            "followingList": [2]
+        },
+        {
+            "id": 5,
+            "username": "user5",
+            "password": "password345",
+            "avatar": "https://example.com/avatar5.jpg",
+            "followers": 800,
+            "following": 300,
+            "bio": "This is user5's bio.",
+            "email": "user5@example.com",
+            "phone": "0964896098",
+            "videos": [6],
+            "followersList": [3],
+            "followingList": [3]
+        }
+    ],
+    "videos": [
+        {
+            "id": 1,
+            "userId": 1,
+            "description": "Check out my new dance!",
+            "videoUrl": "https://example.com/video1.mp4",
+            "likes": 2400,
+            "commentsCount": 56,
+            "shares": 120,
+            "createdAt": "2024-10-01T10:20:30Z"
+        },
+        {
+            "id": 2,
+            "userId": 1,
+            "description": "Another cool dance!",
+            "videoUrl": "https://example.com/video2.mp4",
+            "likes": 3200,
+            "commentsCount": 70,
+            "shares": 200,
+            "createdAt": "2024-10-02T15:45:10Z"
+        },
+        {
+            "id": 3,
+            "userId": 2,
+            "description": "Amazing cooking tips!",
+            "videoUrl": "https://example.com/video3.mp4",
+            "likes": 1800,
+            "commentsCount": 89,
+            "shares": 150,
+            "createdAt": "2024-10-03T11:10:45Z"
+        },
+        {
+            "id": 4,
+            "userId": 3,
+            "description": "Fun travel vlog!",
+            "videoUrl": "https://example.com/video4.mp4",
+            "likes": 1000,
+            "commentsCount": 20,
+            "shares": 40,
+            "createdAt": "2024-10-04T09:25:00Z"
+        },
+        {
+            "id": 5,
+            "userId": 4,
+            "description": "Workout routine",
+            "videoUrl": "https://example.com/video5.mp4",
+            "likes": 2300,
+            "commentsCount": 45,
+            "shares": 90,
+            "createdAt": "2024-10-05T08:15:00Z"
+        },
+        {
+            "id": 6,
+            "userId": 5,
+            "description": "Tech tips and tricks!",
+            "videoUrl": "https://example.com/video6.mp4",
+            "likes": 1500,
+            "commentsCount": 30,
+            "shares": 60,
+            "createdAt": "2024-10-06T10:45:00Z"
+        }
+    ]
+}

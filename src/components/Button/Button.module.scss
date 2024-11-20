@@ -11,6 +11,7 @@
     background-color: var(--white);
     color: rgb(22, 24, 35);
     border: 1px solid transparent;
+    cursor: pointer;
 
     & .disabled {
         pointer-events: none;
@@ -60,6 +61,25 @@
     }
 }
 
+.wrapper.onlyIcon {
+    height: 4rem;
+    min-width: 4rem;
+
+    .icon + .title,
+    .title + .icon {
+        margin-left: 0px;
+    }
+}
+
+.secondary {
+    background-color: rgba(0, 0, 0, 0.05);
+    font-weight: 600;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.12);
+    }
+}
+
 .primary {
     color: var(--white);
     background-color: var(--primary);
@@ -77,6 +97,11 @@
 }
 
 .large {
+    min-width: 88px;
+    padding: 10px 16px;
+}
+
+.xLarge {
     min-width: 148px;
     padding: 14px 16px;
 }
