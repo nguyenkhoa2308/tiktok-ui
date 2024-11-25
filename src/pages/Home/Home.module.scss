@@ -1,0 +1,26 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: hidden;
+    transition: flex 300ms linear;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    max-height: calc(-60px + 100vh);
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.video-feed {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    max-height: calc(-60px + 100vh);
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}

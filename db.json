@@ -1,136 +1,645 @@
 {
     "users": [
         {
-            "id": 1,
-            "username": "khoanene",
-            "password": "khoa23082003",
-            "avatar": "https://example.com/avatar1.jpg",
-            "followers": 1200,
-            "following": 150,
-            "bio": "This is user1's bio.",
+            "_id": "1",
+            "username": "_khoanene",
+            "name": "Nguyễn Khoa",
             "email": "nguyenduckhoa.ndk.2308@gmail.com",
-            "phone": "0964896098",
-            "videos": [1, 2],
-            "followersList": [2, 3],
-            "followingList": [2, 3]
+            "password": "khoa23082003",
+            "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089659/pdbrffjlqjgln94dknoj.jpg",
+            "description": "Yo, I'm Khoa",
+            "totalLikes": 0,
+            "following": ["2", "4"],
+            "followers": ["2", "3"],
+            "interestedIn": ["music", "tech"],
+            "notifications": [],
+            "createdAt": "2024-11-01T00:00:00Z"
         },
         {
-            "id": 2,
-            "username": "user2",
-            "password": "password456",
-            "avatar": "https://example.com/avatar2.jpg",
-            "followers": 890,
-            "following": 300,
-            "bio": "This is user2's bio.",
-            "email": "user2@example.com",
-            "phone": "0964896098",
-            "videos": [3],
-            "followersList": [1],
-            "followingList": [1, 4]
+            "_id": "2",
+            "username": "ninnguyxn",
+            "name": "Ninne",
+            "email": "nphh@gmail.com",
+            "password": "hai04102003",
+            "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089805/srbatnyifsz7ygog740y.jpg",
+            "description": "Lover of coding.",
+            "totalLikes": 10,
+            "following": ["1"],
+            "followers": ["1"],
+            "interestedIn": ["coding", "design"],
+            "notifications": [],
+            "createdAt": "2024-11-02T00:00:00Z"
         },
         {
-            "id": 3,
-            "username": "user3",
-            "password": "password789",
-            "avatar": "https://example.com/avatar3.jpg",
-            "followers": 500,
-            "following": 180,
-            "bio": "This is user3's bio.",
-            "email": "user3@example.com",
-            "phone": "0964896098",
-            "videos": [4],
-            "followersList": [1],
-            "followingList": [1, 5]
+            "_id": "3",
+            "username": "jettdual",
+            "name": "Jett",
+            "email": "jett@example.com",
+            "password": "jett1234",
+            "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089655/uklpaoou45fnsutbaltb.jpg",
+            "description": "Best Agent!",
+            "totalLikes": 15,
+            "following": ["1", "2"],
+            "followers": ["1"],
+            "interestedIn": ["valorant", "game"],
+            "notifications": [],
+            "createdAt": "2024-11-03T00:00:00Z"
         },
         {
-            "id": 4,
-            "username": "user4",
-            "password": "password012",
-            "avatar": "https://example.com/avatar4.jpg",
-            "followers": 400,
-            "following": 250,
-            "bio": "This is user4's bio.",
-            "email": "user4@example.com",
-            "phone": "0964896098",
-            "videos": [5],
-            "followersList": [2],
-            "followingList": [2]
+            "_id": "4",
+            "username": "manunited",
+            "name": "Manchester United",
+            "email": "admin@manutd.com",
+            "password": "glorymanutd20",
+            "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089804/fvnfqd0te0gbavek1u1k.jpg",
+            "description": "The official Manchester United account.",
+            "totalLikes": 500,
+            "following": ["4", "6"],
+            "followers": ["1", "4"],
+            "interestedIn": ["sports", "merchandise"],
+            "notifications": [],
+            "createdAt": "2024-11-05T00:00:00Z"
         },
         {
-            "id": 5,
-            "username": "user5",
-            "password": "password345",
-            "avatar": "https://example.com/avatar5.jpg",
-            "followers": 800,
-            "following": 300,
-            "bio": "This is user5's bio.",
-            "email": "user5@example.com",
-            "phone": "0964896098",
-            "videos": [6],
-            "followersList": [3],
-            "followingList": [3]
+            "_id": "5",
+            "username": "brunofernandes",
+            "name": "Bruno Fernandes",
+            "email": "bruno@manutd.com",
+            "password": "bruno8manutd",
+            "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089806/ecicsazdfraqemq6n1jy.jpg",
+            "description": "Midfield maestro at Manchester United.",
+            "totalLikes": 100,
+            "following": ["5", "6"],
+            "followers": ["1", "5"],
+            "interestedIn": ["football", "fitness"],
+            "notifications": [],
+            "createdAt": "2024-11-04T00:00:00Z"
+        },
+        {
+            "_id": "6",
+            "username": "mixigaming",
+            "name": "Mixi Gaming",
+            "email": "mixigaming@gmail.com",
+            "password": "mixigaming123",
+            "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089804/fuy6fr776twxa9bpcsm0.jpg",
+            "description": "Streamer | Entertainer | Father of 2 sons.",
+            "totalLikes": 300,
+            "following": ["4", "5"],
+            "followers": ["2", "3"],
+            "interestedIn": ["streaming", "gaming"],
+            "notifications": [],
+            "createdAt": "2024-11-06T00:00:00Z"
         }
     ],
     "videos": [
         {
-            "id": 1,
-            "userId": 1,
-            "description": "Check out my new dance!",
-            "videoUrl": "https://example.com/video1.mp4",
-            "likes": 2400,
-            "commentsCount": 56,
-            "shares": 120,
-            "createdAt": "2024-10-01T10:20:30Z"
+            "_id": "1",
+            "uploader": {
+                "username": "_khoanene",
+                "name": "Nguyễn Khoa",
+                "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089659/pdbrffjlqjgln94dknoj.jpg",
+                "description": "Yo, I'm Khoa",
+                "followers": 2,
+                "totalLikes": 0
+            },
+            "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732093413/khoa1_ujjx7g.mp4",
+            "music": "song1",
+            "caption": "Duet D2T",
+            "tags": ["music"],
+            "likes": ["2", "3"],
+            "totalComments": 1,
+            "comments": [
+                {
+                    "postedBy": "2",
+                    "comment": "Hay qua ban oi xD!",
+                    "createdAt": "2024-11-20T00:00:00Z",
+                    "likes": []
+                }
+            ],
+            "favourites": 16,
+            "shares": 10,
+            "views": 250,
+            "createdAt": "2024-11-15T00:00:00Z"
         },
         {
-            "id": 2,
-            "userId": 1,
-            "description": "Another cool dance!",
-            "videoUrl": "https://example.com/video2.mp4",
-            "likes": 3200,
-            "commentsCount": 70,
+            "_id": "2",
+            "uploader": {
+                "username": "_khoanene",
+                "name": "Nguyễn Khoa",
+                "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089659/pdbrffjlqjgln94dknoj.jpg",
+                "description": "Yo, I'm Khoa",
+                "followers": 2,
+                "totalLikes": 0
+            },
+            "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732093414/khoa2_vddn1s.mp4",
+            "music": "song2",
+            "caption": "Cover DoiMat - GDucky",
+            "tags": ["cover"],
+            "likes": ["3"],
+            "totalComments": 0,
+            "comments": [],
+            "favourites": 20,
+            "shares": 7,
+            "views": 300,
+            "createdAt": "2024-11-16T00:00:00Z"
+        },
+        {
+            "_id": "3",
+            "uploader": {
+                "username": "_khoanene",
+                "name": "Nguyễn Khoa",
+                "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089659/pdbrffjlqjgln94dknoj.jpg",
+                "description": "Yo, I'm Khoa",
+                "followers": 2,
+                "totalLikes": 0
+            },
+            "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732093413/khoa3_cpsaxi.mp4",
+            "music": "song3",
+            "caption": "",
+            "tags": ["ulatroi"],
+            "likes": ["2"],
+            "totalComments": 1,
+            "comments": [
+                {
+                    "postedBy": "2",
+                    "comment": "Nice challenge",
+                    "createdAt": "2024-11-19T00:00:00Z",
+                    "likes": []
+                }
+            ],
+            "favourites": 23,
+            "shares": 15,
+            "views": 400,
+            "createdAt": "2024-11-18T00:00:00Z"
+        },
+        {
+            "_id": "4",
+            "uploader": {
+                "username": "ninnguyxn",
+                "name": "Ninne",
+                "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089805/srbatnyifsz7ygog740y.jpg",
+                "description": "Lover of coding.",
+                "followers": 1,
+                "totalLikes": 10
+            },
+            "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732090270/k2vluwt0fwsbbbrqmf6i.mp4",
+            "music": "song4",
+            "caption": "2/9/1945-2/9/2024",
+            "tags": ["quockhanhvietnam2024🇻🇳🇻🇳", "vietnamtoiyeu"],
+            "likes": ["1", "3"],
+            "totalComments": 2,
+            "comments": [
+                {
+                    "postedBy": "3",
+                    "comment": "Nice video!",
+                    "createdAt": "2024-11-16T00:00:00Z",
+                    "likes": []
+                },
+                {
+                    "postedBy": "5",
+                    "comment": "Great video!",
+                    "createdAt": "2024-11-16T00:00:00Z",
+                    "likes": []
+                }
+            ],
+            "favourites": 11,
+            "shares": 5,
+            "views": 150,
+            "createdAt": "2024-11-17T00:00:00Z"
+        },
+        {
+            "_id": "5",
+            "uploader": {
+                "username": "ninnguyxn",
+                "name": "Ninne",
+                "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089805/srbatnyifsz7ygog740y.jpg",
+                "description": "Lover of coding.",
+                "followers": 1,
+                "totalLikes": 10
+            },
+            "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732090270/ivangtgqyyeoj9fsmg94.mp4",
+            "music": "song5",
+            "caption": "❤️",
+            "tags": ["TrendTiktok"],
+            "likes": ["1"],
+            "totalComments": 0,
+            "comments": [],
+            "favourites": 14,
+            "shares": 3,
+            "views": 100,
+            "createdAt": "2024-11-18T00:00:00Z"
+        },
+        {
+            "_id": "6",
+            "uploader": {
+                "username": "ninnguyxn",
+                "name": "Ninne",
+                "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089805/srbatnyifsz7ygog740y.jpg",
+                "description": "Lover of coding.",
+                "followers": 1,
+                "totalLikes": 10
+            },
+            "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732090433/qbwc3rli40akn3xs9pua.mp4",
+            "music": "song6",
+            "caption": "🤙🏻🩵",
+            "tags": ["TrendTiktok", "capcut"],
+            "likes": ["3"],
+            "totalComments": 1,
+            "comments": [
+                {
+                    "postedBy": "1",
+                    "comment": "Great perspective!",
+                    "createdAt": "2024-11-19T00:00:00Z",
+                    "likes": []
+                }
+            ],
+            "favourites": 23,
+            "shares": 4,
+            "views": 180,
+            "createdAt": "2024-11-20T00:00:00Z"
+        },
+        {
+            "_id": "7",
+            "uploader": {
+                "username": "jettdual",
+                "name": "Jett",
+                "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089655/uklpaoou45fnsutbaltb.jpg",
+                "description": "Best Agent!",
+                "followers": 1,
+                "totalLikes": 15
+            },
+            "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732094774/jett1_cq0yzr.mp4",
+            "music": "song7",
+            "caption": "My Movie",
+            "tags": ["movie", "jett"],
+            "likes": ["1", "2"],
+            "totalComments": 1,
+            "comments": [
+                {
+                    "postedBy": "2",
+                    "comment": "Awesome!",
+                    "createdAt": "2024-11-20T00:00:00Z",
+                    "likes": []
+                }
+            ],
+            "favourites": 35,
+            "shares": 20,
+            "views": 500,
+            "createdAt": "2024-11-15T00:00:00Z"
+        },
+        {
+            "_id": "8",
+            "uploader": {
+                "username": "jettdual",
+                "name": "Jett",
+                "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089655/uklpaoou45fnsutbaltb.jpg",
+                "description": "Best Agent!",
+                "followers": 1,
+                "totalLikes": 15
+            },
+            "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732094767/jett2_yg2qxb.mp4",
+            "music": "song8",
+            "caption": "wanna q?",
+            "tags": ["valorant", "jettknives", "jett"],
+            "likes": ["1"],
+            "totalComments": 2,
+            "comments": [
+                {
+                    "postedBy": "1",
+                    "comment": "GGWP! 🙌",
+                    "createdAt": "2024-11-18T00:00:00Z",
+                    "likes": []
+                },
+                {
+                    "postedBy": "2",
+                    "comment": "You're carrying hard! 💪",
+                    "createdAt": "2024-11-19T00:00:00Z",
+                    "likes": []
+                }
+            ],
+            "favourites": 13,
+            "shares": 8,
+            "views": 230,
+            "createdAt": "2024-11-16T00:00:00Z"
+        },
+        {
+            "_id": "9",
+            "uploader": {
+                "username": "jettdual",
+                "name": "Jett",
+                "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089655/uklpaoou45fnsutbaltb.jpg",
+                "description": "Best Agent!",
+                "followers": 1,
+                "totalLikes": 15
+            },
+            "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732094769/jett3_iumn1n.mp4",
+            "music": "song9",
+            "caption": "Ty for 10k guys",
+            "tags": ["valorant", "jettknives", "onetab"],
+            "likes": ["2"],
+            "totalComments": 2,
+            "comments": [
+                {
+                    "postedBy": "1",
+                    "comment": "sheesh",
+                    "createdAt": "2024-11-17T00:00:00Z",
+                    "likes": []
+                },
+                {
+                    "postedBy": "2",
+                    "comment": "You're unstoppable!",
+                    "createdAt": "2024-11-17T00:00:00Z",
+                    "likes": []
+                }
+            ],
+            "favourites": 33,
+            "shares": 10,
+            "views": 320,
+            "createdAt": "2024-11-18T00:00:00Z"
+        },
+        {
+            "_id": "10",
+            "uploader": {
+                "username": "manunited",
+                "name": "Manchester United",
+                "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089804/fvnfqd0te0gbavek1u1k.jpg",
+                "description": "The official Manchester United account.",
+                "followers": 2,
+                "totalLikes": 500
+            },
+            "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732090678/zqaj6ig3tozxsg6w7nn2.mp4",
+            "music": "manutd-anthem",
+            "caption": "Finish the chant!",
+            "tags": ["MUFC ", "ManUtd", "Fernandes", "Hojlund", "Malacia", "Rashford", "Lindelof", "Dalot", "Garnacho"],
+            "likes": ["5", "6"],
+            "totalComments": 2,
+            "comments": [
+                {
+                    "postedBy": "5",
+                    "comment": "You're an inspiration!",
+                    "createdAt": "2024-11-18T00:00:00Z",
+                    "likes": []
+                },
+                {
+                    "postedBy": "6",
+                    "comment": "Keep going!",
+                    "createdAt": "2024-11-19T00:00:00Z",
+                    "likes": []
+                }
+            ],
+            "favourites": 60,
+            "shares": 50,
+            "views": 1000,
+            "createdAt": "2024-11-17T00:00:00Z"
+        },
+        {
+            "_id": "11",
+            "uploader": {
+                "username": "manunited",
+                "name": "Manchester United",
+                "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089804/fvnfqd0te0gbavek1u1k.jpg",
+                "description": "The official Manchester United account.",
+                "followers": 2,
+                "totalLikes": 500
+            },
+            "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732090675/gldcokhajglu2zefzbwk.mp4",
+            "music": "in-the-zone",
+            "caption": "⚙️ The work continues!",
+            "tags": ["MUFC ", "ManUtd", "RubenAmorim", "Amorim", "PremierLeague"],
+            "likes": ["6"],
+            "totalComments": 1,
+            "comments": [
+                {
+                    "postedBy": "6",
+                    "comment": "Ruben Amorim is a beast! Can't wait to see more of his magic on the field!",
+                    "createdAt": "2024-11-20T00:00:00Z",
+                    "likes": []
+                }
+            ],
+            "favourites": 50,
+            "shares": 20,
+            "views": 800,
+            "createdAt": "2024-11-18T00:00:00Z"
+        },
+        {
+            "_id": "12",
+            "uploader": {
+                "username": "manunited",
+                "name": "Manchester United",
+                "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089804/fvnfqd0te0gbavek1u1k.jpg",
+                "description": "The official Manchester United account.",
+                "followers": 2,
+                "totalLikes": 500
+            },
+            "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732090676/wsryozydgcbr1xmwprfc.mp4",
+            "music": "victory-song",
+            "caption": "2️⃣5️⃣0️⃣ appearances for Bruno! 👏",
+            "tags": ["MUFC ", "ManUtd", "BrunoFernandes", "OldTrafford", "PremierLeague"],
+            "likes": ["5", "6"],
+            "totalComments": 3,
+            "comments": [
+                {
+                    "postedBy": "5",
+                    "comment": "Congratulations captain! Congratulations my team 🥰",
+                    "createdAt": "2024-11-19T00:00:00Z",
+                    "likes": []
+                },
+                {
+                    "postedBy": "5",
+                    "comment": "Congratulations captain! Congratulations my team 🥰",
+                    "createdAt": "2024-11-19T00:00:00Z",
+                    "likes": []
+                },
+                {
+                    "postedBy": "5",
+                    "comment": "Congratulations captain! Congratulations my team 🥰",
+                    "createdAt": "2024-11-19T00:00:00Z",
+                    "likes": []
+                }
+            ],
+            "favourites": 100,
+            "shares": 100,
+            "views": 1500,
+            "createdAt": "2024-11-19T00:00:00Z"
+        },
+        {
+            "_id": "13",
+            "uploader": {
+                "username": "brunofernandes",
+                "name": "Bruno Fernandes",
+                "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089806/ecicsazdfraqemq6n1jy.jpg",
+                "description": "Midfield maestro at Manchester United.",
+                "followers": 1,
+                "totalLikes": 100
+            },
+            "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732090678/oqyblue9txxx5vlrsl15.mp4",
+            "music": "red-devils-united",
+            "caption": "250 GAMES WITH THE REDS ❤️ Special milestone for a special club 🙌🏼 thanks for the support since day one until now !",
+            "tags": ["football", "united"],
+            "likes": ["4", "6"],
+            "totalComments": 1,
+            "comments": [
+                {
+                    "postedBy": "6",
+                    "comment": "Yesterday I got impressed by the playing style keep it up but Garnacho didn't celebrate his goal it was embarrassing,glory united🥰🥰🥰",
+                    "createdAt": "2024-11-18T00:00:00Z",
+                    "likes": []
+                }
+            ],
+            "favourites": 189,
             "shares": 200,
-            "createdAt": "2024-10-02T15:45:10Z"
+            "views": 5000,
+            "createdAt": "2024-11-17T00:00:00Z"
         },
         {
-            "id": 3,
-            "userId": 2,
-            "description": "Amazing cooking tips!",
-            "videoUrl": "https://example.com/video3.mp4",
-            "likes": 1800,
-            "commentsCount": 89,
-            "shares": 150,
-            "createdAt": "2024-10-03T11:10:45Z"
+            "_id": "14",
+            "uploader": {
+                "username": "brunofernandes",
+                "name": "Bruno Fernandes",
+                "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089806/ecicsazdfraqemq6n1jy.jpg",
+                "description": "Midfield maestro at Manchester United.",
+                "followers": 1,
+                "totalLikes": 100
+            },
+            "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732090681/fr7baflejgeg8fspbeku.mp4",
+            "music": "fans-anthem",
+            "caption": "Eager to start 💪🏼",
+            "tags": [],
+            "likes": ["4"],
+            "totalComments": 1,
+            "comments": [
+                {
+                    "postedBy": "1",
+                    "comment": "Keep going! Cap",
+                    "createdAt": "2024-11-18T00:00:00Z",
+                    "likes": []
+                }
+            ],
+            "favourites": 90,
+            "shares": 30,
+            "views": 1200,
+            "createdAt": "2024-11-18T00:00:00Z"
         },
         {
-            "id": 4,
-            "userId": 3,
-            "description": "Fun travel vlog!",
-            "videoUrl": "https://example.com/video4.mp4",
-            "likes": 1000,
-            "commentsCount": 20,
+            "_id": "15",
+            "uploader": {
+                "username": "brunofernandes",
+                "name": "Bruno Fernandes",
+                "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089806/ecicsazdfraqemq6n1jy.jpg",
+                "description": "Midfield maestro at Manchester United.",
+                "followers": 1,
+                "totalLikes": 100
+            },
+            "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732090678/rwuhydda4xubs81ngykd.mp4",
+            "music": "stadium-echoes",
+            "caption": "No better feeling 🤩",
+            "tags": ["football"],
+            "likes": ["6"],
+            "totalComments": 1,
+            "comments": [
+                {
+                    "postedBy": "2",
+                    "comment": "Portuguese magnifico 😍",
+                    "createdAt": "2024-11-19T00:00:00Z",
+                    "likes": []
+                }
+            ],
+            "favourites": 238,
             "shares": 40,
-            "createdAt": "2024-10-04T09:25:00Z"
+            "views": 2000,
+            "createdAt": "2024-11-19T00:00:00Z"
         },
         {
-            "id": 5,
-            "userId": 4,
-            "description": "Workout routine",
-            "videoUrl": "https://example.com/video5.mp4",
-            "likes": 2300,
-            "commentsCount": 45,
-            "shares": 90,
-            "createdAt": "2024-10-05T08:15:00Z"
+            "_id": "16",
+            "uploader": {
+                "username": "mixigaming",
+                "name": "Mixi Gaming",
+                "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089804/fuy6fr776twxa9bpcsm0.jpg",
+                "description": "Streamer | Entertainer | Father of 2 sons.",
+                "followers": 2,
+                "totalLikes": 300
+            },
+            "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732090678/dnkvhrausn9agoew6zoq.mp4",
+            "music": "mixi-intro",
+            "caption": "anh Độ ơiiiii :))",
+            "tags": ["mixigaming"],
+            "likes": ["4", "5"],
+            "totalComments": 2,
+            "comments": [
+                {
+                    "postedBy": "1",
+                    "comment": "Sự kết hợp giữa Xeme + Datka :))",
+                    "createdAt": "2024-11-20T00:00:00Z",
+                    "likes": []
+                },
+                {
+                    "postedBy": "2",
+                    "comment": "ông này người Việt lai Cam, cuối buổi stream bắn tiếng Việt như người bản xứ :))",
+                    "createdAt": "2024-11-20T01:00:00Z",
+                    "likes": []
+                }
+            ],
+            "favourites": 410,
+            "shares": 100,
+            "views": 3000,
+            "createdAt": "2024-11-17T00:00:00Z"
         },
         {
-            "id": 6,
-            "userId": 5,
-            "description": "Tech tips and tricks!",
-            "videoUrl": "https://example.com/video6.mp4",
-            "likes": 1500,
-            "commentsCount": 30,
+            "_id": "17",
+            "uploader": {
+                "username": "mixigaming",
+                "name": "Mixi Gaming",
+                "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089804/fuy6fr776twxa9bpcsm0.jpg",
+                "description": "Streamer | Entertainer | Father of 2 sons.",
+                "followers": 2,
+                "totalLikes": 300
+            },
+            "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732090674/cbkif8ib1ehyamiq6oyl.mp4",
+            "music": "game-vibes",
+            "caption": ":))",
+            "tags": ["mixigaming"],
+            "likes": ["4"],
+            "totalComments": 0,
+            "comments": [],
+            "favourites": 35,
+            "shares": 50,
+            "views": 2500,
+            "createdAt": "2024-11-18T00:00:00Z"
+        },
+        {
+            "_id": "18",
+            "uploader": {
+                "username": "mixigaming",
+                "name": "Mixi Gaming",
+                "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089804/fuy6fr776twxa9bpcsm0.jpg",
+                "description": "Streamer | Entertainer | Father of 2 sons.",
+                "followers": 2,
+                "totalLikes": 300
+            },
+            "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732090689/r8n0znegkutjivui1p1m.mov",
+            "music": "victory-sounds",
+            "caption": "We won the match in style!",
+            "tags": ["mixigaming"],
+            "likes": ["4", "5"],
+            "totalComments": 2,
+            "comments": [
+                {
+                    "postedBy": "5",
+                    "comment": "kênh này là kênh mẹ và bé à mn 🐧 🔎: 2 thằng kia và trang anh nhà tôi :))))",
+                    "createdAt": "2024-11-19T00:00:00Z",
+                    "likes": []
+                },
+                {
+                    "postedBy": "3",
+                    "comment": "🔎: 2 thằng kia và trang anh nhà tôi :))))",
+                    "createdAt": "2024-11-19T00:00:00Z",
+                    "likes": []
+                }
+            ],
+            "favourites": 129,
             "shares": 60,
-            "createdAt": "2024-10-06T10:45:00Z"
+            "views": 2800,
+            "createdAt": "2024-11-19T00:00:00Z"
         }
     ]
 }
