@@ -5,3 +5,64 @@
     position: fixed;
     overflow-y: auto;
 }
+
+.login-container {
+    padding: 16px 8px;
+    line-height: 18px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 8px;
+        right: 8px;
+        top: 0px;
+        height: 1px;
+        background: rgba(22, 24, 35, 0.12);
+        transform: scaleY(0.5);
+    }
+}
+
+.login-btn {
+    width: 100%;
+}
+
+.footer-container {
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 16px 8px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 8px;
+        right: 8px;
+        top: 0px;
+        height: 1px;
+        background: rgba(22, 24, 35, 0.12);
+        transform: scaleY(0.5);
+    }
+}
+
+.footer-text {
+    font-size: 1.5rem;
+    line-height: 22px;
+    margin-top: 0px;
+    cursor: pointer;
+    color: rgba(22, 24, 35, 0.5);
+    font-weight: 700;
+
+    &:not(:first-child) {
+        margin-top: 5px;
+    }
+}
+
+.copyright {
+    color: rgba(22, 24, 35, 0.5);
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 16px;
+    display: inline-block;
+    margin-right: 6px;
+    margin-top: 5px;
+}

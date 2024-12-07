@@ -13,6 +13,7 @@ import Friends from '~/pages/Friends';
 import Messages from '~/pages/Messages';
 import Upload from '~/pages/Upload';
 import Search from '~/pages/Search';
+import Login from '~/pages/Login';
 
 const publicRoutes = [
     { path: config.routes.home, component: Home },
@@ -22,6 +23,7 @@ const publicRoutes = [
     { path: config.routes.explore, component: Explore },
     { path: config.routes.friends, component: Friends },
     { path: config.routes.messages, component: Messages, layout: HeaderOnly },
+    { path: config.routes.login, component: Login, layout: HeaderOnly },
     { path: config.routes.upload, component: Upload, layout: HeaderOnly },
     { path: config.routes.search, component: Search, layout: null },
 ];

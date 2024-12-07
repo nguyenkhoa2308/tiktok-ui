@@ -61,6 +61,11 @@ input,
     outline: none;
 }
 
+input[type='password']::-ms-reveal,
+input[type='password']::-ms-clear {
+    display: none;
+}
+
 a {
     color: var(--text-color);
     text-decoration: none;

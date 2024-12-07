@@ -4,14 +4,15 @@
             "_id": "1",
             "username": "_khoanene",
             "name": "Nguyễn Khoa",
-            "email": "nguyenduckhoa.ndk.2308@gmail.com",
+            "email": "khoa@gmail.com",
             "password": "khoa23082003",
             "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089659/pdbrffjlqjgln94dknoj.jpg",
             "description": "Yo, I'm Khoa",
             "totalLikes": 0,
-            "following": ["2", "4"],
+            "following": ["2", "4", "5"],
             "followers": ["2", "3"],
             "interestedIn": ["music", "tech"],
+            "verified": false,
             "notifications": [],
             "createdAt": "2024-11-01T00:00:00Z"
         },
@@ -19,7 +20,7 @@
             "_id": "2",
             "username": "ninnguyxn",
             "name": "Ninne",
-            "email": "nphh@gmail.com",
+            "email": "nhph@gmail.com",
             "password": "hai04102003",
             "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089805/srbatnyifsz7ygog740y.jpg",
             "description": "Lover of coding.",
@@ -27,6 +28,7 @@
             "following": ["1"],
             "followers": ["1"],
             "interestedIn": ["coding", "design"],
+            "verified": false,
             "notifications": [],
             "createdAt": "2024-11-02T00:00:00Z"
         },
@@ -42,6 +44,7 @@
             "following": ["1", "2"],
             "followers": ["1"],
             "interestedIn": ["valorant", "game"],
+            "verified": false,
             "notifications": [],
             "createdAt": "2024-11-03T00:00:00Z"
         },
@@ -57,6 +60,7 @@
             "following": ["4", "6"],
             "followers": ["1", "4"],
             "interestedIn": ["sports", "merchandise"],
+            "verified": true,
             "notifications": [],
             "createdAt": "2024-11-05T00:00:00Z"
         },
@@ -72,6 +76,7 @@
             "following": ["5", "6"],
             "followers": ["1", "5"],
             "interestedIn": ["football", "fitness"],
+            "verified": true,
             "notifications": [],
             "createdAt": "2024-11-04T00:00:00Z"
         },
@@ -87,6 +92,7 @@
             "following": ["4", "5"],
             "followers": ["2", "3"],
             "interestedIn": ["streaming", "gaming"],
+            "verified": true,
             "notifications": [],
             "createdAt": "2024-11-06T00:00:00Z"
         }
@@ -100,7 +106,8 @@
                 "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089659/pdbrffjlqjgln94dknoj.jpg",
                 "description": "Yo, I'm Khoa",
                 "followers": 2,
-                "totalLikes": 0
+                "totalLikes": 0,
+                "verified": false
             },
             "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732093413/khoa1_ujjx7g.mp4",
             "music": "song1",
@@ -129,7 +136,8 @@
                 "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089659/pdbrffjlqjgln94dknoj.jpg",
                 "description": "Yo, I'm Khoa",
                 "followers": 2,
-                "totalLikes": 0
+                "totalLikes": 0,
+                "verified": false
             },
             "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732093414/khoa2_vddn1s.mp4",
             "music": "song2",
@@ -151,7 +159,8 @@
                 "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089659/pdbrffjlqjgln94dknoj.jpg",
                 "description": "Yo, I'm Khoa",
                 "followers": 2,
-                "totalLikes": 0
+                "totalLikes": 0,
+                "verified": false
             },
             "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732093413/khoa3_cpsaxi.mp4",
             "music": "song3",
@@ -180,7 +189,8 @@
                 "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089805/srbatnyifsz7ygog740y.jpg",
                 "description": "Lover of coding.",
                 "followers": 1,
-                "totalLikes": 10
+                "totalLikes": 10,
+                "verified": false
             },
             "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732090270/k2vluwt0fwsbbbrqmf6i.mp4",
             "music": "song4",
@@ -215,7 +225,8 @@
                 "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089805/srbatnyifsz7ygog740y.jpg",
                 "description": "Lover of coding.",
                 "followers": 1,
-                "totalLikes": 10
+                "totalLikes": 10,
+                "verified": false
             },
             "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732090270/ivangtgqyyeoj9fsmg94.mp4",
             "music": "song5",
@@ -237,7 +248,8 @@
                 "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089805/srbatnyifsz7ygog740y.jpg",
                 "description": "Lover of coding.",
                 "followers": 1,
-                "totalLikes": 10
+                "totalLikes": 10,
+                "verified": false
             },
             "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732090433/qbwc3rli40akn3xs9pua.mp4",
             "music": "song6",
@@ -266,7 +278,8 @@
                 "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089655/uklpaoou45fnsutbaltb.jpg",
                 "description": "Best Agent!",
                 "followers": 1,
-                "totalLikes": 15
+                "totalLikes": 15,
+                "verified": false
             },
             "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732094774/jett1_cq0yzr.mp4",
             "music": "song7",
@@ -295,7 +308,8 @@
                 "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089655/uklpaoou45fnsutbaltb.jpg",
                 "description": "Best Agent!",
                 "followers": 1,
-                "totalLikes": 15
+                "totalLikes": 15,
+                "verified": false
             },
             "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732094767/jett2_yg2qxb.mp4",
             "music": "song8",
@@ -330,7 +344,8 @@
                 "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089655/uklpaoou45fnsutbaltb.jpg",
                 "description": "Best Agent!",
                 "followers": 1,
-                "totalLikes": 15
+                "totalLikes": 15,
+                "verified": false
             },
             "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732094769/jett3_iumn1n.mp4",
             "music": "song9",
@@ -365,7 +380,8 @@
                 "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089804/fvnfqd0te0gbavek1u1k.jpg",
                 "description": "The official Manchester United account.",
                 "followers": 2,
-                "totalLikes": 500
+                "totalLikes": 500,
+                "verified": true
             },
             "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732090678/zqaj6ig3tozxsg6w7nn2.mp4",
             "music": "manutd-anthem",
@@ -400,7 +416,8 @@
                 "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089804/fvnfqd0te0gbavek1u1k.jpg",
                 "description": "The official Manchester United account.",
                 "followers": 2,
-                "totalLikes": 500
+                "totalLikes": 500,
+                "verified": true
             },
             "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732090675/gldcokhajglu2zefzbwk.mp4",
             "music": "in-the-zone",
@@ -429,7 +446,8 @@
                 "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089804/fvnfqd0te0gbavek1u1k.jpg",
                 "description": "The official Manchester United account.",
                 "followers": 2,
-                "totalLikes": 500
+                "totalLikes": 500,
+                "verified": true
             },
             "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732090676/wsryozydgcbr1xmwprfc.mp4",
             "music": "victory-song",
@@ -470,7 +488,8 @@
                 "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089806/ecicsazdfraqemq6n1jy.jpg",
                 "description": "Midfield maestro at Manchester United.",
                 "followers": 1,
-                "totalLikes": 100
+                "totalLikes": 100,
+                "verified": true
             },
             "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732090678/oqyblue9txxx5vlrsl15.mp4",
             "music": "red-devils-united",
@@ -499,7 +518,8 @@
                 "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089806/ecicsazdfraqemq6n1jy.jpg",
                 "description": "Midfield maestro at Manchester United.",
                 "followers": 1,
-                "totalLikes": 100
+                "totalLikes": 100,
+                "verified": true
             },
             "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732090681/fr7baflejgeg8fspbeku.mp4",
             "music": "fans-anthem",
@@ -528,7 +548,8 @@
                 "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089806/ecicsazdfraqemq6n1jy.jpg",
                 "description": "Midfield maestro at Manchester United.",
                 "followers": 1,
-                "totalLikes": 100
+                "totalLikes": 100,
+                "verified": true
             },
             "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732090678/rwuhydda4xubs81ngykd.mp4",
             "music": "stadium-echoes",
@@ -557,7 +578,8 @@
                 "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089804/fuy6fr776twxa9bpcsm0.jpg",
                 "description": "Streamer | Entertainer | Father of 2 sons.",
                 "followers": 2,
-                "totalLikes": 300
+                "totalLikes": 300,
+                "verified": true
             },
             "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732090678/dnkvhrausn9agoew6zoq.mp4",
             "music": "mixi-intro",
@@ -592,7 +614,8 @@
                 "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089804/fuy6fr776twxa9bpcsm0.jpg",
                 "description": "Streamer | Entertainer | Father of 2 sons.",
                 "followers": 2,
-                "totalLikes": 300
+                "totalLikes": 300,
+                "verified": true
             },
             "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732090674/cbkif8ib1ehyamiq6oyl.mp4",
             "music": "game-vibes",
@@ -614,7 +637,8 @@
                 "profilePhoto": "https://res.cloudinary.com/dezywk7nm/image/upload/v1732089804/fuy6fr776twxa9bpcsm0.jpg",
                 "description": "Streamer | Entertainer | Father of 2 sons.",
                 "followers": 2,
-                "totalLikes": 300
+                "totalLikes": 300,
+                "verified": true
             },
             "video": "https://res.cloudinary.com/dezywk7nm/video/upload/v1732090689/r8n0znegkutjivui1p1m.mov",
             "music": "victory-sounds",

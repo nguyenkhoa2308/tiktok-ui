@@ -2,6 +2,7 @@ import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
 import Tippy from '@tippyjs/react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 
 import config from '~/config';
@@ -28,6 +29,7 @@ import {
 } from '~/components/Icons';
 import 'tippy.js/dist/tippy.css';
 import Search from '../Search';
+import { UserContext } from '~/contexts';
 
 const cx = classNames.bind(styles);
 
@@ -91,61 +93,65 @@ const MENU_ITEMS = [
     },
 ];
 
-const USER_MENU = [
-    {
-        icon: <ProfileIcon />,
-        title: 'View profile',
-        to: '/profile',
-    },
-    {
-        icon: <GetCoinsIcon />,
-        title: 'Get Coins',
-        to: '/coins',
-    },
-    {
-        icon: <CreatorToolsIcon />,
-        title: 'Creator tools',
-        children: {
-            title: 'Creator tools',
-            data: [
-                {
-                    icon: <AnalyticsIcon />,
-                    title: 'View Analytics',
-                },
-                {
-                    icon: <PromotePostIcon />,
-                    title: 'Promote post',
-                },
-                {
-                    icon: <LiveStudioIcon />,
-                    title: 'LIVE Studio',
-                },
-                {
-                    icon: <LiveCreatorHubIcon />,
-                    title: 'LIVE Creator Hub',
-                },
-            ],
-        },
-    },
-    {
-        icon: <SettingsIcon />,
-        title: 'Settings',
-        to: '/settings',
-    },
-    ...MENU_ITEMS.slice(1),
-    {
-        icon: <LogOutIcon />,
-        title: 'Log out',
-        to: '/logout',
-        separate: true,
-    },
-];
+function Header({ onOpenLoginModal }) {
+    const { user, logout } = useContext(UserContext);
 
-function Header() {
-    const currentUser = true;
+    const USER_MENU = [
+        {
+            icon: <ProfileIcon />,
+            title: 'View profile',
+            to: user ? `/@${user.username}` : '/',
+        },
+        {
+            icon: <GetCoinsIcon />,
+            title: 'Get Coins',
+            to: '/coins',
+        },
+        {
+            icon: <CreatorToolsIcon />,
+            title: 'Creator tools',
+            children: {
+                title: 'Creator tools',
+                data: [
+                    {
+                        icon: <AnalyticsIcon />,
+                        title: 'View Analytics',
+                    },
+                    {
+                        icon: <PromotePostIcon />,
+                        title: 'Promote post',
+                    },
+                    {
+                        icon: <LiveStudioIcon />,
+                        title: 'LIVE Studio',
+                    },
+                    {
+                        icon: <LiveCreatorHubIcon />,
+                        title: 'LIVE Creator Hub',
+                    },
+                ],
+            },
+        },
+        {
+            icon: <SettingsIcon />,
+            title: 'Settings',
+            to: '/settings',
+        },
+        ...MENU_ITEMS.slice(1),
+        {
+            icon: <LogOutIcon />,
+            title: 'Log out',
+            action: 'logout',
+            separate: true,
+        },
+    ];
+
+    const items = user ? USER_MENU : MENU_ITEMS;
 
     const handleMenuChange = (menuItem) => {
-        console.log(menuItem);
+        if (menuItem.action === 'logout') {
+            logout();
+        }
     };
 
     return (
@@ -158,7 +164,7 @@ function Header() {
                 <Search />
 
                 <div className={cx('action')}>
-                    {currentUser ? (
+                    {user ? (
                         <>
                             <Button
                                 outlineDarkColor
@@ -175,12 +181,14 @@ function Header() {
                             </Tippy>
                         </>
                     ) : (
-                        <Button primary>Log in</Button>
+                        <Button primary onClick={onOpenLoginModal}>
+                            Log in
+                        </Button>
                     )}
 
-                    <Menu items={currentUser ? USER_MENU : MENU_ITEMS} onChange={handleMenuChange}>
-                        {currentUser ? (
-                            <Image src={images.avatar} className={cx('user-avt')} alt="Nguyễn Đức Khoa" />
+                    <Menu items={items} onChange={handleMenuChange}>
+                        {user ? (
+                            <Image src={user.profilePhoto} className={cx('user-avt')} alt="Nguyễn Đức Khoa" />
                         ) : (
                             <button className={cx('more-btn')}>
                                 <FontAwesomeIcon icon={faEllipsisVertical} />

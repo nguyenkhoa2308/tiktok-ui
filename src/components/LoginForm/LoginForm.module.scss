@@ -1,0 +1,91 @@
+.login-container {
+    width: 363px;
+    margin: auto;
+    padding: unset;
+    margin-top: 64px;
+}
+
+.login-title {
+    color: rgb(22, 24, 35);
+    font-family: TikTokDisplayFont;
+    font-size: 32px;
+    margin: 16px auto;
+    font-weight: bold;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.login-desc {
+    color: rgb(22, 24, 35);
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 9px;
+}
+
+.input-container {
+    border-radius: 2px;
+    background-color: rgba(22, 24, 35, 0.06);
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    padding-inline-start: 12px;
+    color: rgb(22, 24, 35);
+    line-height: 100%;
+    outline: none;
+    font-size: 16px;
+    height: 44px;
+    caret-color: rgb(254, 44, 85);
+    width: 100%;
+    padding-inline-end: unset;
+}
+
+.icon-container {
+    right: 0px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    height: 44px;
+    padding-inline-end: 16px;
+}
+
+.icon {
+    line-height: 0;
+    margin-inline-start: 16px;
+    cursor: pointer;
+    font-size: 2rem;
+    opacity: 0.5;
+}
+
+.text-container {
+    font-size: 1.2rem;
+    line-height: 15px;
+    margin: 4px 0px;
+    color: rgb(255, 76, 58);
+    display: flex;
+}
+
+.link {
+    color: rgba(22, 24, 35, 0.75);
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: inline-block;
+}
+
+.login-btn {
+    width: 100%;
+    margin-top: 21px;
+    padding: 13px 16px;
+
+    &.disabled {
+        border: none;
+        color: rgba(22, 24, 35, 0.34);
+        background-color: rgba(22, 24, 35, 0.06);
+        pointer-events: none;
+    }
+}

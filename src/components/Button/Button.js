@@ -60,6 +60,7 @@ function Button({
         large,
         xLarge,
     });
+
     return (
         <Comp className={classes} {..._props}>
             {leftIcon && <span className={cx('icon')}>{leftIcon}</span>}

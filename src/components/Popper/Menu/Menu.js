@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import classNames from 'classnames/bind';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Tippy from '@tippyjs/react/headless';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import MenuItem from './MenuItem';
@@ -14,6 +14,10 @@ const defaultFn = () => {};
 function Menu({ children, items = [], hideOnClick = false, onChange = defaultFn }) {
     const [history, setHistory] = useState([{ data: items }]);
     const [selectedMode, setSelectedMode] = useState(null);
+
+    useEffect(() => {
+        setHistory([{ data: items }]); // Cập nhật history khi items thay đổi
+    }, [items]);
 
     const current = history[history.length - 1];
 

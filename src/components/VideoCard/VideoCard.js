@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind';
-import { useState, useEffect, useRef, forwardRef } from 'react';
+import { useState, useEffect, forwardRef } from 'react';
 
 import styles from './VideoCard.module.scss';
 import {
@@ -39,24 +39,24 @@ function VideoCard({ data, isMuted, setIsMuted }, ref) {
 
     const handleMuteToggle = () => {
         if (ref.current) {
-            const newMutedState = !isMuted; // Toggle mute state
-            setIsMuted(newMutedState); // Update the state
-            ref.current.muted = newMutedState; // Apply the change to the video
+            const newMutedState = !isMuted;
+            setIsMuted(newMutedState);
+            ref.current.muted = newMutedState;
         }
     };
 
     const handlePlayPauseToggle = () => {
         if (ref.current) {
             if (ref.current.paused) {
-                ref.current.play(); // Phát video nếu đang tạm dừng
+                ref.current.play();
             } else {
-                ref.current.pause(); // Tạm dừng video nếu đang phát
+                ref.current.pause();
             }
         }
     };
 
     useEffect(() => {
-        const currentRef = ref.current; // Gắn ref vào biến cục bộ
+        const currentRef = ref.current;
         if (currentRef) {
             currentRef.addEventListener('timeupdate', handleTimeUpdate);
         }

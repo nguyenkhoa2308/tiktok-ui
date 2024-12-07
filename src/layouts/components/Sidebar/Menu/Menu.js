@@ -17,12 +17,11 @@ import {
     ProfileIcon,
 } from '~/components/Icons';
 import config from '~/config';
-import images from '~/assets/images';
 import styles from './Menu.module.scss';
 
 const cx = classNames.bind(styles);
 
-function Menu({ currentUser }) {
+function Menu({ user }) {
     return (
         <nav className={cx('menu-container')}>
             <MenuItem to={config.routes.home} title="For You" icon={<HomeIcon />} activeIcon={<HomeActiveIcon />} />
@@ -35,10 +34,10 @@ function Menu({ currentUser }) {
             <MenuItem
                 to={config.routes.following}
                 title="Following"
-                icon={currentUser ? <FollowingIcon /> : <UserGroupIcon />}
-                activeIcon={currentUser ? <FollowingActiveIcon /> : <UserGroupActiveIcon />}
+                icon={user ? <FollowingIcon /> : <UserGroupIcon />}
+                activeIcon={user ? <FollowingActiveIcon /> : <UserGroupActiveIcon />}
             />
-            {currentUser && (
+            {user && (
                 <MenuItem
                     to={config.routes.friends}
                     title="Friends"
@@ -47,14 +46,12 @@ function Menu({ currentUser }) {
                 />
             )}
             <MenuItem to={config.routes.live} title="LIVE" icon={<LiveIcon />} activeIcon={<LiveActiveIcon />} />
-            {currentUser && (
-                <MenuItem to={config.routes.messages} title="Messages" icon={<MessageIcon />} activeIcon={null} />
-            )}
+            {user && <MenuItem to={config.routes.messages} title="Messages" icon={<MessageIcon />} activeIcon={null} />}
             <MenuItem
-                to={null}
+                to={user ? `/@${user.username}` : null}
                 title="Profile"
                 icon={<ProfileIcon width="2.4rem" height="2.4rem" />}
-                avt={currentUser ? <img className={cx('img-avatar')} src={images.avatar} alt="avt" /> : null}
+                avt={user ? <img className={cx('img-avatar')} src={user.profilePhoto} alt="avt" /> : null}
                 activeIcon={null}
             />
         </nav>
@@ -62,7 +59,7 @@ function Menu({ currentUser }) {
 }
 
 Menu.propTypes = {
-    currentUser: PropTypes.bool.isRequired,
+    user: PropTypes.object,
 };
 
 export default Menu;
